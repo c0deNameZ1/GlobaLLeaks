@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Global Leaks - ROBLOX Discord Server</title>
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
@@ -20,6 +21,75 @@
         </nav>
     </div>
 </div>
+
+
+<!-- Modal -->
+<center>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="checkbox-container">
+      <input type="checkbox" id="acceptTerms">
+      <label class="checkmark" for="acceptTerms"></label>
+      <label for="acceptTerms">I allow the use of cookies and have read and accept the Terms of Service and Privacy Policy: <a href="https://theglobalestablishment.com/tos" target="_blank" style="color: white;">Click Here</a></label>
+    </div>
+    <button id="glow-on-hover">Continue</button>
+  </div>
+</div>
+</center>
+<script>
+var modal = document.getElementById("myModal");
+var acceptButton = document.getElementById("glow-on-hover"); //DON'T CHANGE
+var acceptCheckbox = document.getElementById("acceptTerms");
+
+function checkAcceptanceStatus() {
+  return document.cookie.includes("accepted=true");
+}
+
+function setAcceptanceCookie() {
+  document.cookie = "accepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+}
+
+function openModal() {
+  if (!checkAcceptanceStatus()) {
+    modal.style.display = "block";
+  } else {
+    // Scroll the page down by 475 pixels
+    var targetPosition = window.scrollY + 475;
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth'
+    });
+  }
+}
+
+function closeModal() {
+  modal.style.display = "none";
+}
+
+acceptButton.onclick = function() {
+  //var audio = document.getElementById('myAudio2');
+  //audio.play();
+  if (acceptCheckbox.checked) {
+    setAcceptanceCookie();
+    closeModal();
+    // Scroll the page down by 475 pixels after accepting the terms
+    var targetPosition = window.scrollY + 475;
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth'
+    });
+  } else {
+    alert("Please accept the Terms and Conditions / Privacy Policy to continue.");
+  }
+}
+
+window.onload = function() {
+  openModal();
+};
+</script>
+<!-- End Modal -->
+
+
 
 <div class="container">
     <header>
