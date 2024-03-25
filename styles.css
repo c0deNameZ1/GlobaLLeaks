@@ -205,37 +205,3 @@ nav ul li a:hover {
 
 /* Rest of your CSS styles */
 /* Add them here */
-* {
-  padding: 0;
-  margin: 0;
-  font-family: monospace;
-}
-ul {
-  list-style: none;
-  background: #36393f;
-}
-ul li{
-  display: inline-block;
-  position: relative;
-}
-ul li a {
-  display: block;
-  padding: 20px 25px;
-  color: #FFF;
-  text-decoration: none;
-  text-align: center;
-  font-size: 20px;
-}
-ul li ul.dropdown li {
-  display: block;
-}
-ul li ul.dropdown {
-  width: 100%;
-  background: #36393f;
-  position: absolute;
-  z-index: 999;
-  display: none;
-}
-ul li:hover ul.dropdown {
-  display: block;
-}
