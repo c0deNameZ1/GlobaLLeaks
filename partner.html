@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="x-icon" href="https://cdn.glitch.global/ff292cfa-2a3d-4d1c-8684-493f8c92c888/ava.png?v=1711388593479" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forbs Studio</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <style>
     @media screen and (min-width: 769px) {
@@ -97,7 +105,30 @@
 </head>
 
 <body>
- 
+  <header class="header">
+    <div class="nav-menu">
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="partners.html">Partners</a></li>
+        <li><a href="/light/partners.html">Light Version Website</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">FORBS STUDIO</h1>
+        <p class="hero-text">One of the major Discord servers. Find links to global leaks and more.</p>
+        <div style="margin-top: 20px;"><a href="https://discord.gg/forbs" class="join-button"><i class="fab fa-discord"></i> JOIN NOW</a></div>
+      </div>
+    </div>
+  </section>
 
 <section id="partners" class="section-partners">
   <div class="container">
@@ -136,6 +167,20 @@
     </div>
   </section>
 
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">&copy; 2024 Forbs Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    $(document).ready(function() {
+      $('.hamburger-menu').click(function() {
+        $(this).toggleClass('active');
+        $('.nav-list').toggleClass('active');
+      });
+    });
+  </script>
 </body>
 
 </html>
