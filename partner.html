@@ -1,186 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <link rel="shortcut icon" type="x-icon" href="https://cdn.glitch.global/ff292cfa-2a3d-4d1c-8684-493f8c92c888/ava.png?v=1711388593479" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forbs Studio</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <style>
-    @media screen and (min-width: 769px) {
-      .expanded-menu {
-        display: none;
-      }
-    }
-
-    @media screen and (max-width: 768px) {
-      .hamburger-menu {
-        display: block;
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 999;
-      }
-
-      .nav-menu.active .expanded-menu {
-        display: block;
-      }
-    }
-
-    .join-button {
-      margin-top: 20px;
-    }
-
-    .section-title {
-      text-align: center;
-    }
-
-    .partner-container {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      margin-bottom: 40px;
-    }
-
-  .partner-card {
-    width: 200px;
-    background-color: #444;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    animation: partnerAnimation 1s ease-in-out infinite alternate, shadowAnimation 5s infinite linear;
-  }
-
-    .partner-logo {
-      width: 100px;
-      height: 100px;
-      margin-bottom: 20px;
-      border-radius: 15px;
-    }
-
-    .partner-title {
-      color: #fff;
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .partner-description {
-      font-size: 14px;
-      color: #fff;
-    }
-
-  @keyframes partnerAnimation {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes shadowAnimation {
-    0% {
-      box-shadow: 0 0 10px rgba(67, 67, 192, 0.5), 0 0 20px rgba(67, 67, 192, 0.3), 0 0 30px rgba(67, 67, 192, 0.2);
-    }
-    50% {
-      box-shadow: 0 0 10px rgba(192, 67, 67, 0.5), 0 0 20px rgba(192, 67, 67, 0.3), 0 0 30px rgba(192, 67, 67, 0.2);
-    }
-    100% {
-      box-shadow: 0 0 10px rgba(67, 192, 67, 0.5), 0 0 20px rgba(67, 192, 67, 0.3), 0 0 30px rgba(67, 192, 67, 0.2);
-    }
-  }
-
-  </style>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="x-icon" href="globalleaks.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Leaks - Roblox Discord Server</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-
 <body>
-  <header class="header">
-    <div class="nav-menu">
-      <div class="hamburger-menu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="partners.html">Partners</a></li>
-        <li><a href="/light/partners.html">Light Version Website</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <section class="hero">
+<div class="navbar">
     <div class="container">
-      <div class="hero-content">
-        <h1 class="hero-title">FORBS STUDIO</h1>
-        <p class="hero-text">One of the major Discord servers. Find links to global leaks and more.</p>
-        <div style="margin-top: 20px;"><a href="https://discord.gg/forbs" class="join-button"><i class="fab fa-discord"></i> JOIN NOW</a></div>
-      </div>
+        <a href="./" class="logo"><i class="fab fa-discord"></i> Global Leaks</a>
+        <nav>
+            <ul>
+                <li><a href="./">About Us</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Join Us</a></li>
+                <li><a href="./staff">Staff</a></li>
+                <li><a href="./partner">Partners</a></li>
+                <li><a href="./tos">ToS</a></li>
+            </ul>
+        </nav>
     </div>
-  </section>
+</div>
 
-<section id="partners" class="section-partners">
-  <div class="container">
-    <h2 class="section-title">Our Partners</h2>
-    <div class="partner-container">
-      <div class="partner-card">
-        <img src="https://cdn.glitch.global/ff292cfa-2a3d-4d1c-8684-493f8c92c888/globalleaks.png?v=1711391243357" alt="Partner 1" class="partner-logo">
-        <h3 class="partner-title">Global Leaks</h3>
-        <p class="partner-description">
-          <h3 class="partner-title" style="color:white;">
-            WHAT DO WE OFFER?
-          </h3>
-          <span style="color:white;">• Unleaked stuff<br>
-          • Spoofers<br>
-          • Servers Premium<br>
-          • Paid Leaks<br>
-          • Studio Leaks<br>
-          • Marketplace.</span>
-        </p>
-          <div style="margin-top: 20px;"><a href="https://discord.gg/globalleaks" class="join-buttonp"><i class="fab fa-discord"></i> JOIN NOW</a></div>
-      </div>
-      <div class="partner-container">
-        <div class="partner-card">
-          <img src="https://cdn.glitch.global/ff292cfa-2a3d-4d1c-8684-493f8c92c888/partner1.png?v=1711390463689" alt="Partner 2" class="partner-logo">
-          <h3 class="partner-title">Partner 2</h3>
-          <p class="partner-description">Your advertising text will be here..</p>
-          <div style="margin-top: 20px;"><a href="https://discord.gg/forbs" class="join-buttonp"><i class="fab fa-discord"></i> JOIN NOW</a></div>
-      </div>
-      <div class="partner-container">
-        <div class="partner-card">
-          <img src="https://cdn.glitch.global/ff292cfa-2a3d-4d1c-8684-493f8c92c888/partner1.png?v=1711390463689" alt="Partner 3" class="partner-logo">
-          <h3 class="partner-title">Partner 3</h3>
-          <p class="partner-description">Your advertising text will be here..</p>
-          <div style="margin-top: 20px;"><a href="https://discord.gg/forbs" class="join-buttonp"><i class="fab fa-discord"></i> JOIN NOW</a></div>
-      </div>
-    </div>
-  </section>
+<div class="container">
+    <header>
+        <h1>Meet Our Partners</h1>
+        <!--<p>Welcome to the Roblox Discord Server</p>-->
+    </header>
+    <section id="join">
+        <h2>INFINITE STUDIOS</h2>
+        <p> </p>
+        <p>━━━━━━━━━━━━━━━━━━━━━━━</p>
+        <p>• | INFINITE STUDIOS</p>
+        <p>• | Cooking Up High-Quality Models</p>
+        <p>━━━━━━━━━━━━━━━━━━━━━━━</p>
+        <p> </p>
+        <p>Infinite Studios will provide you with the best quality models, assets, maps, buildings, vehicles, files, and even more! not just that but we have a large number of Custom Free Models along with a great and active staff team who can assist you In anything you may be needing!</p>
+        <p> </p>
+        <p>• Community Benefits</p>
+        <p>In Infinite Studios, we allow you to be able to gain access to a large number of free files along with a great number of premium files! benefits to joining us contain ; A great and active community, a great activity of admins, giveaways, and more!</p>
+        <p> </p>
+        <p>• TikTok Link:</p>
+        <p><li><a href=" https://www.tiktok.com/@infinitestudio3">https://www.tiktok.com/@infinitestudio3</a></li></p>
+        <p> </p>
+        <p>• YouTube Link:</p>
+        <p><li><a href="https://www.youtube.com/@InfiniteStudioYT">https://www.youtube.com/@InfiniteStudioYT</a></li></p>
+        <p> </p>
+        <a href="https://discord.gg/2rvHPxWm5f" class="button"><i class="fab fa-discord"></i> Join Now</a>
+    </section>
+    <section id="join">
+        <h2>MODDED SERVICES</h2>
+        <p> </p>
+        <p>• Do you want -</p>
+        <p>  > Leaks?</p>
+        <p>  > Help at scripting?</p>
+        <p>  > Games?</p>
+        <p>  > Get partners?</p>
+        <p>  > Is Modded Vaults Js V2</p>
+        <p> </p>
+        <h2>Join us today!</h2>
+        <a href="https://discord.gg/EMZQzjvkfd" class="button"><i class="fab fa-discord"></i> Join Now</a>
+    </section>
+    <section id="join">
+        <h2>FORBS STUDIO LEAKS</h2>
+        <p> </p>
+        <p>• What services does Forbs Studio offer?</p>
+        <p>  > Exclusive unreleased content</p>
+        <p>  > Deceptive tools</p>
+        <p>  > Premium server access</p>
+        <p>  > Paid access to undisclosed information</p>
+        <p>  > Confidential studio materials</p>
+        <p>  > Online marketplace</p>
+        <p>  > Notifications sent to everyone</p>
+        <p> </p>
+        <a href="https://discord.gg/forbs" class="button"><i class="fab fa-discord"></i> Join Now</a>
+    </section>
+    <section id="join">
+        <h2>Dls Studio</h2>
+        <p> </p>
+        <p>• Are you in search of a vibrant and engaging community with incredible resources, trading opportunities, and more? Look no further! Dls Studio is the ideal server to partner with, and here's why:</p>
+        <p>  > Thriving Chatting Community: Our server boasts a diverse and active community where members share ideas, engage in meaningful conversations, and forge lasting connections. Whether you're a seasoned member or a newbie, you'll find a welcoming and friendly atmosphere.</p>
+        <p>  > Top-Notch Files: At Dls Studio, we take pride in providing access to high-quality files, ensuring that you'll find valuable resources and information right at your fingertips. Our commitment to quality sets us apart.</p>
+        <p>  > Trade with Confidence: We offer a secure and reliable platform for trading, ensuring that you can trade with peace of mind. Your assets are in safe hands with us.</p>
+        <p> </p>
+        <p>*** And that's just the tip of the iceberg! Dls Studio offers so much more, and we're ready to explore exciting partnership opportunities with your server. Let's grow together and create a stronger and more enriched community for all our members. ***</p>
+        <p>• If you're interested in partnering with Dls Studio or want to learn more about us, please don't hesitate to reach out. We're excited to explore the endless possibilities a partnership can bring to our communities!</p>
+        <p> </p>
+        <h2>Join us today, and let's make the online world a better place, one partnership at a time!</h2>
+        <p> </p>
+        <a href="https://discord.gg/cd6SURsaa3" class="button"><i class="fab fa-discord"></i> Join Now</a>
+    </section>
+    <footer>
+        <p>&copy; 2024 Global Leaks. All rights reserved.</p>
+    </footer>
+</div>
 
-  <footer class="footer">
-    <div class="container">
-      <p class="footer-text">&copy; 2024 Forbs Studio. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    $(document).ready(function() {
-      $('.hamburger-menu').click(function() {
-        $(this).toggleClass('active');
-        $('.nav-list').toggleClass('active');
+<script>
+      VanillaTilt.init(document.querySelectorAll(".card"),{
+        glare: true,
+        reverse: true,
+        "max-glare": 0.15
       });
-    });
-  </script>
+    </script>
 </body>
-
 </html>
