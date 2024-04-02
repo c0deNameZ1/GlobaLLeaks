@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="x-icon" href="globalleaks.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Leaks - ROBLOX Discord Server</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<div class="navbar">
+    <div class="container">
+        <a href="./" class="logo"><i class="fab fa-discord"></i> Global Leaks</a>
+        <!-- Кнопка гамбургера только для мобильных устройств -->
+        <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- End Кнопка гамбургера -->
+        <!-- Menu -->
+        <nav>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Join Us</a></li>
+                <li><a href="./">Staff</a></li>
+                <li><a href="./partner">Partners</a></li>
+                <li><a href="./tos">ToS</a></li>
+            </ul>
+        </nav>
+        <!-- End Menu -->
+    </div>
+</div>
+
+<div class="container">
+    <header>
+        <h1>Global Leaks</h1>
+        <p>Welcome to the ROBLOX Discord Server Website</p>
+    </header>
+    <style>
+        a {
+          text-decoration: none;
+        }
+      </style>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+    <section id="about" class="card rgb">
+        <h2>About Us</h2>
+        <p>We are a community of ROBLOX players who love to share tips, tricks, and leaks. Join us to stay updated with the latest news and leaks in the ROBLOX world.</p>
+    </section>
+    <section id="join">
+        <h2>Join Us</h2>
+        <p>Join our Discord server to chat with other ROBLOX players, participate in giveaways, and get access to exclusive leaks and content.</p>
+        <a href="https://discord.gg/ZFgy8yQr2m" class="button"><i class="fab fa-discord"></i> Join Now</a>
+    </section>
+    <footer>
+        <p>&copy; 2024 Global Leaks. All rights reserved.</p>
+    </footer>
+</div>
+
+<script>
+document.querySelector('.hamburger-menu').addEventListener('click', function() {
+  this.classList.toggle('active');
+  document.querySelector('nav').classList.toggle('active');
+});
+
+document.querySelectorAll('nav ul li a').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelector('nav').classList.remove('active');
+    document.querySelector('.hamburger-menu').classList.remove('active');
+  });
+});
+</script>
+</body>
+</html>

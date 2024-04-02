@@ -1,0 +1,89 @@
+@media screen and (min-width: 769px) {
+  .expanded-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+
+  .nav-menu.active .expanded-menu {
+    display: block;
+  }
+}
+
+.join-button {
+  margin-top: 20px;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.partner-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.partner-card {
+width: 200px;
+background-color: #3a3c41;
+padding: 20px;
+margin: 10px;
+text-align: center;
+box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+animation: partnerAnimation 1s ease-in-out infinite alternate, shadowAnimation 5s infinite linear;
+}
+
+.partner-logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.partner-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.partner-description {
+  font-size: 14px;
+  color: #fff;
+}
+
+@keyframes partnerAnimation {
+0% {
+  transform: translateY(0);
+}
+50% {
+  transform: translateY(-10px);
+}
+100% {
+  transform: translateY(0);
+}
+}
+
+@keyframes shadowAnimation {
+0% {
+  box-shadow: 0 0 10px rgba(67, 67, 192, 0.5), 0 0 20px rgba(67, 67, 192, 0.3), 0 0 30px rgba(67, 67, 192, 0.2);
+}
+50% {
+  box-shadow: 0 0 10px rgba(192, 67, 67, 0.5), 0 0 20px rgba(192, 67, 67, 0.3), 0 0 30px rgba(192, 67, 67, 0.2);
+}
+100% {
+  box-shadow: 0 0 10px rgba(67, 192, 67, 0.5), 0 0 20px rgba(67, 192, 67, 0.3), 0 0 30px rgba(67, 192, 67, 0.2);
+}
+}
