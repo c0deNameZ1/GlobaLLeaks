@@ -7,8 +7,12 @@
 <title>Global Leaks - ROBLOX Discord Server</title>
 <script>
     function joinNow() {
-        alert("You are about to join our TGE: Appeal & Checkoint Server!");
-        window.location.href = "https://discord.gg/WQEkuCTdMh";
+        // Show a confirmation dialog to the user
+        var result = confirm("You are about to join our TGE: Appeal & Checkpoint Server. Do you want to continue?");
+        // If user clicks OK, redirect them to the link
+        if (result) {
+            window.location.href = "https://discord.gg/WQEkuCTdMh";
+        }
     }
   </script>
 <link rel="stylesheet" href="styles.css">
