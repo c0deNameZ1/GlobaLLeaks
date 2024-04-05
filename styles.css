@@ -289,3 +289,7 @@ nav ul li a:hover {
 
   
 }
+
+.no-click {
+    pointer-events: none;
+}

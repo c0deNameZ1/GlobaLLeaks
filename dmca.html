@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="x-icon" href="globalleaks.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Leaks - ROBLOX Discord Server</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<meta property="og:title" content="Global Leaks - ROBLOX Discord Server">
+<meta property="og:description" content="Welcome to the ROBLOX Discord Server Website. We are a community of ROBLOX players who love to share tips, tricks, and leaks. Join us to stay updated with the latest news and leaks in the ROBLOX world.">
+<meta property="og:image" content="https://media.discordapp.net/attachments/1217839604015824936/1223224759655862332/2oEW4d8.gif?ex=661913d5&is=66069ed5&hm=aae20877623997a690fdf6b932f48e2505a880480e95a7acfe7b82b9f2c0cd05&">
+<meta property="og:url" content="https://www.theglobalestablishment.com/">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Global Leaks - ROBLOX Discord Server">
+<meta name="twitter:description" content="Welcome to the ROBLOX Discord Server Website. We are a community of ROBLOX players who love to share tips, tricks, and leaks. Join us to stay updated with the latest news and leaks in the ROBLOX world.">
+<meta name="twitter:image" content="https://media.discordapp.net/attachments/1217839604015824936/1223224759655862332/2oEW4d8.gif?ex=661913d5&is=66069ed5&hm=aae20877623997a690fdf6b932f48e2505a880480e95a7acfe7b82b9f2c0cd05&">
+</head>
+<body>
+<div class="navbar">
+    <div class="container">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="logo"><i class="fab fa-discord"></i> Global Leaks</a>
+        <!-- Кнопка гамбургера только для мобильных устройств -->
+        <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- End Кнопка гамбургера -->
+        <!-- Menu -->
+        <nav>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Join Us</a></li>
+                <li><a href="./staff">Staff</a></li>
+                <li><a href="./partner">Partners</a></li>
+                <li><a href="./tos">ToS</a></li>
+            </ul>
+        </nav>
+        <!-- End Menu -->
+    </div>
+</div>
+
+<!-- Modal -->
+<center>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="checkbox-container">
+          <input type="checkbox" id="acceptTerms">
+          <label class="checkmark" for="acceptTerms"></label>
+          <label for="acceptTerms">I allow the use of cookies and have read and accept the Terms of Service and Privacy Policy: <a href="./tos" target="_blank" style="color: white;">Click Here</a></label>
+        </div>
+        <button id="glow-on-hover">Continue</button>
+      </div>
+    </div>
+    </center>
+    <script>
+    var modal = document.getElementById("myModal");
+    var acceptButton = document.getElementById("glow-on-hover"); //DON'T CHANGE
+    var acceptCheckbox = document.getElementById("acceptTerms");
+    
+    function checkAcceptanceStatus() {
+      return document.cookie.includes("accepted=true");
+    }
+    
+    function setAcceptanceCookie() {
+      document.cookie = "accepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+    }
+    
+    function openModal() {
+      if (!checkAcceptanceStatus()) {
+        modal.style.display = "block";
+      } else {
+        // Scroll the page down by 475 pixels
+        var targetPosition = window.scrollY + 475;
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }
+    
+    function closeModal() {
+      modal.style.display = "none";
+    }
+    
+    acceptButton.onclick = function() {
+      //var audio = document.getElementById('myAudio2');
+      //audio.play();
+      if (acceptCheckbox.checked) {
+        setAcceptanceCookie();
+        closeModal();
+        // Scroll the page down by 475 pixels after accepting the terms
+        var targetPosition = window.scrollY + 475;
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      } else {
+        alert("Please accept the Terms and Conditions / Privacy Policy to continue.");
+      }
+    }
+    
+    window.onload = function() {
+      openModal();
+    };
+    </script>
+<!-- End of Modal-->
+
+<div class="container">
+    <header>
+        <h1>DMCA Takedown Notice Information Card</h1>
+        <p>Please provide the following infomration file DMCA Takedown showcased on this website.</p>
+    </header>
+    <section id="join">
+        <dl>
+            <dt>Information Card:</dt>
+            <dd><p>
+                Your Full Name: [Your Name]
+            </p></dd>
+            <dd><p>
+                Your Email Address: [Your Email Address]
+            </p></dd>
+            <dd><p>
+                Your Phone Number: [Your Phone Number]
+            </p></dd>
+            <dd><p>
+                Your Address: [Your Mailing Address]
+            </p></dd>
+        </dl>
+        <dl>
+            <dt>Description of Work Infringed:</dt>
+            <dd><p>
+                Title of the Work: [Title of the Infringed Work]
+            </p></dd>
+            <dd><p>
+                URL of Infringed Work: [URL where the copyrighted material is hosted]
+            </p></dd>
+            <dd><p>
+                Description of the Infringed Work: [Description of the copyrighted material]
+            </p></dd>
+        </dl>
+        <dl>
+            <dt>Identification of Infringing Material:</dt>
+            <dd><p>
+                URL of Infringing Material: [URL where the infringing material is hosted]
+            </p></dd>
+            <dd><p>
+                Description of Infringing Material: [Description of the infringing material]
+            </p></dd>
+        </dl>
+        <dl>
+            <dt>Statement of Copyright Ownership:</dt>
+            <dd><p>
+                I hereby declare under penalty of perjury that I am the owner of the copyrighted work identified above or am authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
+            </p></dd>
+        </dl>
+        <dl>
+            <dt>Electronic Signature:</dt>
+            <dd><p>
+                [Your Full Name]
+            </p></dd>
+        </dl>
+        <dl>
+            <dt>Please attach any supporting documents, such as proof of ownership of the copyrighted material or screenshots of the infringing material, to assist us in processing your DMCA takedown request.</dt>
+            <p> </p>
+            <dt>Note: Filing a false DMCA takedown notice is subject to blocking your email. Ensure that all information provided is accurate and complete to the best of your knowledge.</dt>
+        </dl>
+        <dl>
+            <p> </p>
+            <dt>• This information card should be filled out completely and accurately before sending it via email to the designated recipient or copyright agent of the platform hosting the infringing material. •</dt>
+        </dl>
+    </section>
+    <footer>
+        <p>&copy; 2024 Global Leaks. All rights reserved.</p>
+    </footer>
+</div>
+
+<script>
+document.querySelector('.hamburger-menu').addEventListener('click', function() {
+  this.classList.toggle('active');
+  document.querySelector('nav').classList.toggle('active');
+});
+
+document.querySelectorAll('nav ul li a').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelector('nav').classList.remove('active');
+    document.querySelector('.hamburger-menu').classList.remove('active');
+  });
+});
+</script>
+</body>
+</html>
