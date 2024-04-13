@@ -49,52 +49,12 @@
   <div id="close-container">
     <span class="closebtn" onclick="this.parentElement.parentElement.style.display='none';">&times;</span>
   </div>
-  <strong>Attention please!</strong>  <strong>The website will continue to add small and big updates until the server has fully recovered.</strong>
+  <strong>Attention please!</strong>  <strong>This website stop updating for 2 week</strong>
   <div id="countdown-container">
-    <span style="color: red;" id="time-remaining"><strong>Time Remaining:</strong></span>
+    <span style="color: red;" id="time-remaining"><strong>Reason: Being verified by google for ads and money.</strong></span>
     <span id="countdown"></span>
   </div>
 </div>
-
-<script>
-  // Set the date we're counting down to (April 30, 2024, 8:00 AM)
-  var countDownDate = new Date("Apr 30, 2024 08:00:00").getTime();
-  
-  // Update the countdown every 1 second
-  var x = setInterval(function() {
-  
-    // Get the current date and time
-    var now = new Date().getTime();
-    
-    // Calculate the distance between now and the countdown date
-    var distance = countDownDate - now;
-    
-    // Calculate days, hours, minutes, and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Display the countdown
-    var countdownElement = document.getElementById("countdown");
-    countdownElement.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-    
-    // Highlight the countdown in red and make it bold when it's less than 1 day (24 hours)
-    if (distance < (24 * 60 * 60 * 1000)) {
-      countdownElement.style.color = "red";
-      countdownElement.style.fontWeight = "bold";
-    } else {
-      countdownElement.style.color = "red"; // Reset to default color
-      countdownElement.style.fontWeight = "bold"; // Reset to default font weight
-    }
-    
-    // If the countdown is over, display a message
-    if (distance < 0) {
-      clearInterval(x);
-      countdownElement.innerHTML = "EXPIRED";
-    }
-  }, 1000);
-  </script>
 
 <div class="container">
     <header>

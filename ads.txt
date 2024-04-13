@@ -1,1 +1,10 @@
 google.com, pub-7443744966570130, DIRECT, f08c47fec0942fa0
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9496838165426676"
+     crossorigin="anonymous"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google+ad_client: "ca-pub-7443744966570130",
+        enable_page_level_ads: true
+    });
+</script>
