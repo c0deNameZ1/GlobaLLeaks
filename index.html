@@ -8,13 +8,18 @@
 <script>
   function joinNow() {
       // Show a confirmation dialog to the user
-      var result = confirm("You are about to join our TGE: Appeal & Checkpoint Server. Do you want to continue?");
+      var result = confirm("You are about to join our main server, click "OK" to continue.");
+      
       // If user clicks OK, redirect them to the link
       if (result) {
           window.location.href = "https://discord.gg/WQEkuCTdMh";
+      } else {
+          // If user clicks Cancel, stay on the current page
+          // Nothing needs to be done here, as the default behavior is to stay on the website
       }
   }
 </script>
+
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
